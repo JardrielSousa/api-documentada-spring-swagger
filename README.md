@@ -17,6 +17,61 @@ A classe `UsuarioController` é um controlador REST responsável pela gestão de
   - `delete(Integer id)`: Remove um usuário pelo ID.
   - `getUser(Usuario usuario)`: Salva um novo usuário.
 
+# Ferramentas Utilizadas
+# Documentação do Projeto Maven
+
+Este projeto Maven é configurado para um aplicativo Spring Boot empacotado como WAR. Abaixo está uma visão geral do arquivo `pom.xml` e suas principais seções.
+
+## Estrutura do Arquivo `pom.xml`
+
+### Versão do Modelo
+
+Define a versão do modelo do POM, que é 4.0.0 para projetos Maven.
+
+### Configuração do Pai
+
+- **`groupId`**: Identificador do grupo do projeto pai (Spring Boot).
+- **`artifactId`**: Identificador do artefato do projeto pai (spring-boot-starter-parent).
+- **`version`**: Versão do projeto pai (3.3.2).
+- **`relativePath`**: Caminho relativo para buscar o pai no repositório.
+
+### Informações do Projeto
+
+- **`groupId`**: Identificador do grupo do projeto (com.dio.api.documentada).
+- **`artifactId`**: Identificador do artefato (api-documentada-dio).
+- **`version`**: Versão do projeto (0.0.1-SNAPSHOT).
+- **`packaging`**: Tipo de empacotamento (WAR).
+- **`name`**: Nome do projeto (api-documentada-dio).
+- **`description`**: Descrição do projeto (Demo project for Spring Boot).
+
+### Propriedades
+
+- **`java.version`**: Versão do Java utilizada no projeto (17).
+
+### Dependências
+
+- **`spring-boot-starter-web`**: Starter do Spring Boot para desenvolvimento web.
+- **`spring-boot-starter-tomcat`**: Starter do Spring Boot para Tomcat (escopo `provided`).
+- **`spring-boot-starter-test`**: Starter do Spring Boot para testes (escopo `test`).
+- **`springdoc-openapi-starter-webmvc-ui`**: Starter para integração com OpenAPI.
+- **`springfox-swagger2`**: Dependência para Swagger 2.
+- **`springfox-swagger-ui`**: Dependência para UI do Swagger.
+
+### Plugins
+
+- **`spring-boot-maven-plugin`**: Plugin do Maven para suporte a aplicações Spring Boot.
+
+### Licenças, Desenvolvedores e SCM
+
+Estas seções estão presentes no arquivo XML, mas não contêm informações específicas sobre licenças, desenvolvedores ou controle de versão.
+
+## Conclusão
+
+Este arquivo `pom.xml` configura um projeto Maven para um aplicativo Spring Boot, empacotado como WAR, e inclui dependências para desenvolvimento web e documentação da API.
+
+Para mais informações sobre como configurar o projeto, consulte a [documentação do Maven](https://maven.apache.org/guides/index.html) e a [documentação do Spring Boot](https://spring.io/projects/spring-boot).
+
+
 # Instruções de Uso
 
 1. **Listar Todos os Usuários**:
